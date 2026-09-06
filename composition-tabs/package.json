@@ -1,0 +1,20 @@
+{
+  "name": "confluence-composition-tabs-fix",
+  "version": "1.0.0",
+  "description": "Phase-1 fix for mis-migrated Appfire Composition Tabs in Confluence Cloud: deck/card -> tab-group/tab via storage-XHTML splice rewrite.",
+  "main": "main/sync_composition_tabs.js",
+  "scripts": {
+    "start": "node main/sync_composition_tabs.js",
+    "plan-only": "node main/sync_composition_tabs.js --plan-only",
+    "dry-run": "node main/sync_composition_tabs.js --dry-run",
+    "restore": "node main/restore_composition_tabs.js",
+    "test:fixtures": "node test/test3_rewrite_fixture_pairs.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "Apache-2.0"
+}
