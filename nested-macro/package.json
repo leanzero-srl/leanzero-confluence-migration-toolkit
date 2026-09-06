@@ -1,0 +1,17 @@
+{
+  "name": "confluence-nested-macro-unnest",
+  "version": "1.0.0",
+  "description": "Scan Confluence Cloud for pages with nested bodied macros and un-nest them to sibling order, preserving all content",
+  "main": "main/sync_nested_macros.js",
+  "scripts": {
+    "start": "node main/sync_nested_macros.js",
+    "plan-only": "node main/sync_nested_macros.js --plan-only",
+    "dry-run": "node main/sync_nested_macros.js --dry-run",
+    "test": "node test/run_all.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fast-xml-parser": "^4.3.6"
+  },
+  "license": "Apache-2.0"
+}

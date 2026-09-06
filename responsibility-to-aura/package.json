@@ -1,0 +1,24 @@
+{
+  "name": "confluence-responsibility-to-aura",
+  "version": "1.0.0",
+  "description": "Cloud-only converter: Linchpin Content Responsibility macros -> Aura User Profile macros after Confluence DC to Cloud migration",
+  "main": "main/sync_responsibility_to_aura.js",
+  "scripts": {
+    "start": "node main/sync_responsibility_to_aura.js",
+    "plan-only": "node main/sync_responsibility_to_aura.js --plan-only",
+    "dry-run": "node main/sync_responsibility_to_aura.js --dry-run",
+    "discovery": "node main/sync_responsibility_to_aura.js --discovery-dump",
+    "probe-dc": "node dc/probe_dc.js",
+    "export-dc-users": "node main/export_active_users_dc.js",
+    "restore": "node main/restore_responsibility_to_aura.js",
+    "test": "node test/test_rewrite_fixtures.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "Apache-2.0"
+}

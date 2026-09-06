@@ -1,0 +1,15 @@
+{
+  "name": "confluence-html-macro-sync",
+  "version": "1.0.0",
+  "description": "Sync HTML macro content from Confluence Data Center to Cloud",
+  "main": "main/sync_html_macros.js",
+  "scripts": {
+    "start": "node main/sync_html_macros.js",
+    "plan-only": "node main/sync_html_macros.js --plan-only",
+    "dry-run": "node main/sync_html_macros.js --dry-run"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "license": "Apache-2.0"
+}

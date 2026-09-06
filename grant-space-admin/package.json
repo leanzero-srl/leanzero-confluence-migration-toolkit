@@ -1,0 +1,14 @@
+{
+  "name": "confluence-grant-space-admin",
+  "version": "1.0.0",
+  "description": "Grant the current user (API-token owner) 'administer' permission on every Confluence Cloud space \u2014 non-destructive, adds only.",
+  "main": "main/grant_space_admin.js",
+  "scripts": {
+    "start": "node main/grant_space_admin.js",
+    "dry-run": "node main/grant_space_admin.js --dry-run"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "license": "Apache-2.0"
+}
